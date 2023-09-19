@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-size: 100%;
+
+        @media screen(2xl) {
+            font-size: 90%;
+        }
+
+        @media screen(xl) {
+            font-size: 80%;
+        }
+
+        @media screen(lg) {
+            font-size: 70%;
+        }
+
+        @media screen(md) {
+            font-size: 60%;
+        }
+
+        @media screen(sm) {
+            font-size: 50%;
+        }
+    }
+
+    body {
+        @apply font-body;
+        @apply text-paper-contrast;
+        @apply bg-paper-primary;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1rem;
+    font-weight: 900;
+    color: rgba(var(--paper-contrast) / 0.4);
+}
+
+.swiper-button-disabled {
+    opacity: 0.45;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-weight: 300;
+    src:
+        local("Rubik"),
+        url("./shared/assets/fonts/Rubik-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-weight: 400;
+    src:
+        local("Rubik"),
+        url("./shared/assets/fonts/Rubik-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-weight: 500;
+    src:
+        local("Rubik"),
+        url("./shared/assets/fonts/Rubik-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-weight: 600;
+    src:
+        local("Rubik"),
+        url("./shared/assets/fonts/Rubik-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-weight: 700;
+    src:
+        local("Rubik"),
+        url("./shared/assets/fonts/Rubik-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-weight: 800;
+    src:
+        local("Rubik"),
+        url("./shared/assets/fonts/Rubik-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-weight: 900;
+    src:
+        local("Rubik"),
+        url("./shared/assets/fonts/Rubik-Black.woff2") format("woff2");
+}
+
+:root {
+    --primary-color: 137 191 59;
+    --paper-primary: 238 222 237;
+    --paper-secondary: 255 255 255;
+    --paper-contrast: 0 0 0;
+    --error-color: #b00020;
+    --placeholder: #9ba2ae;
+}

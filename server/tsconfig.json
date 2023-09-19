@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "lib": ["ESNext"],
+        "target": "ES6",
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "incremental": true,
+        "skipLibCheck": true,
+        "strictNullChecks": true,
+        "strictBindCallApply": false,
+        "noImplicitAny": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "outDir": "./dist",
+        "baseUrl": "./",
+        "paths": {
+            "@shared/*": ["./src/shared", "./src/shared/*"],
+            "@modules/*": ["./src/modules", "./src/modules/*"],
+            "@/*": ["./", "./*"]
+        }
+    },
+    "include": ["./src", "./types"]
+}
