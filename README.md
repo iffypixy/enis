@@ -1,4 +1,4 @@
-# nisx
+# enis
 
 Yet another *enis* implementation, an electronic school journal. 
 
